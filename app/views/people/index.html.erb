@@ -1,0 +1,7 @@
+<h1>Our People</h1>
+<% @people.each do |guy| %>
+	<h2><%= link_to guy.firstname, guy%></h2>
+	<hr />
+<% end %>
+
+<p><%= link_to "Add New Person", new_person_path %></p>

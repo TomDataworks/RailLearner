@@ -1,0 +1,19 @@
+<h2>Add New Person</h2>
+
+
+<%= form_for @person do |f| %>
+	<p>
+		<%= f.label :firstname%>
+		<%= f.text_field :firstname %>	
+	</p>
+
+	<p>
+		<%= f.label :lastname%>
+		<%= f.text_field :lastname %>	
+	</p>
+
+	<p>
+		<%= f.submit "Add Guy"%>
+	</p>
+
+<%end%>
