@@ -12,7 +12,7 @@ class PeopleController < ApplicationController
   end
   
   def create
-    @guy = Person.new(params[people_params])
+    @guy = Person.new(people_params)
     
     if @guy.save
       redirect_to people_path, :notice => "Save successfull"
